@@ -1382,7 +1382,7 @@
         $(".hover").hover(function (e) {
             var hover = $(e.target).attr("hover");
             $(e.target).attr("src", hover);
-        }, function () {
+        }, function (e) {
             var img = $(e.target).attr("img");
             $(e.target).attr("src", img);
         })

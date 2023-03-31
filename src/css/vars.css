@@ -1,0 +1,7 @@
+:root{
+    --border-grey-90deg: linear-gradient(90deg, #484848 80%, transparent 20%);
+    --border-grey-0deg: linear-gradient(0deg, #484848 80%, transparent 20%);
+    --border-bg-size: 25px 5px, 25px 5px, 5px 25px,  5px 25px;
+
+    --grey--100: #484848;
+}

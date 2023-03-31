@@ -816,7 +816,7 @@ ul.sm-device-menu-item li  i {
     background-size: cover;
 }
 .mock > p {
-    margin-bottom: 0;
+    margin-bottom: -5px;
 }
 .btn-arrow{
     background: #0000;

@@ -1,0 +1,140 @@
+
+.box-header{
+    position: relative;
+    z-index: 2;
+
+}
+.card_box {
+    border-radius: 16px;
+    padding: 10px;
+    border-radius: 20px;
+    transition: 0.2s;
+}
+
+.card_box:hover {
+    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.2);
+    transform: scale(1.002);
+}
+
+.card-box-red:hover rect{
+    stroke: #e31e24;
+}
+
+
+.card-box-yellow:hover  rect{
+    stroke: #ffed00;
+}
+
+
+.card-box-yellow:hover .box-header {
+    color: #000;
+    background-color: white;
+}
+
+.card-box-yellow .box-header {
+    color: #ffed00;
+}
+
+
+
+.card-box-blue:hover rect{
+    stroke: #393185;
+}
+
+.card-box-blue:hover .box-header {
+    background-color: white;
+}
+
+.card-box-blue .box-header {
+    color: #393185;
+}
+
+
+.card-box-black  rect{
+    stroke: #000;
+}
+
+.card-box-black:hover rect{
+    stroke: #fff;
+}
+
+.card-box-black:hover .box-header {
+    background-color: black;
+}
+
+.card-box-black .box-header {
+    color: white;
+}
+
+
+
+.card-box-green:hover rect{
+    stroke: green;
+}
+
+.card-box-green:hover .box-header {
+    background-color: white;
+}
+
+.card-box-green .box-header {
+    color: green;
+}
+
+.card-box-white rect{
+    stroke: #fff;
+}
+
+.card-box-white:hover rect {
+    stroke: #000;
+}
+
+.card-box-white:hover .box-header {
+    background-color: white;
+}
+
+.card-box-white .box-header {
+    color: black;
+}
+
+.box-content svg{
+    position: absolute;
+    z-index: 1;
+    inset: 0;
+    border-radius: 20px;
+    pointer-events: none;
+}
+
+.box-header svg{
+    position: absolute;
+    z-index: 1;
+    inset: 0;
+    border-radius: 10px;
+
+    pointer-events: none;
+}
+
+.box-content rect{
+    transition-property: stroke-dashoffset, stroke-dasharray,stroke-width,   stroke ;
+    transition-duration:  0.7s, 0.7s, 0.7s, 0.2s;
+    transition-timing-function: ease-out;
+    stroke-dashoffset: 70px;
+}
+
+.card_box:hover .box-content rect{
+    
+    stroke-dasharray: 17px;
+    stroke-width: 12px;
+}
+
+.box-header rect{
+    transition-property: stroke-dashoffset, stroke ;
+    transition-duration: 0.5s, 0.2s;
+    transition-timing-function: ease-in-out, ease-out;
+    stroke-dashoffset: 70px;
+}
+.card_box:hover  .box-header rect{
+    transition-property: stroke-dashoffset, stroke ;
+    transition-duration: 0.7s, 0.2s;
+    transition-timing-function: ease-in-out, ease-out;
+    stroke-dashoffset: 90px;
+}

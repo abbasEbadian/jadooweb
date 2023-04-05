@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحه کالا </title>
+    <link rel="stylesheet" href="/src/css/all1.css">
+    <link rel="stylesheet" href="/src/css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="/src/css/bootstrap.css">
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet" href="/src/css/master.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+</head>
+<body>
+    <div class="bg-gray">
+        <div class="container">
+            <!-- head caption product -->
+            <div class="head-caption-product-box py-5 d-flex align-items-start flex-column justify-content-start">
+                <div class="product-name-box title-filter">
+                    <span class="product-name-sort">ابزار نو</span>
+                    /
+                    <span class="product-name-sort">ابزار های  شارژی و برقی</span>
+                    /
+                    <span class="product-name-sort">دریل ها</span>
+                    /
+                    <span class="product-name-sort">دریل ها ی پیچ گوشتی شارژی 20ولت مدل 5818</span>
+                    /
+                </div>
+                <div class="product-name-box mt-2">
+                    <span class="product-name">آروا</span>
+                    /
+                    <span class="product-name">دریل  پیچ گوشتی شارژی 20ولت  مدل 5185</span>
+                    
+                </div>
+            </div>
+            <!-- product info -->
+            <div class="product-info-body card-box card-box-white filter-hover ">
+                <div class="box-content py-3 px-2">
+                   <div class="row">
+                        <div class="col-lg-4 col-12">
+                            <div class="caption-product-box d-flex flex-column align-items-start justify-content-start border-product py-3 px-2">
+                                <span class="caption-product text-right">دریل  پیچ گوشتی شارژی 20ولت  مدل 5185</span>
+                                <div class="logo-product-box d-flex align-items-center justify-content-between w-100">
+                                    <span class="product-logo-text">آروا</span>
+                                    <img src="./src/svg/logo-product.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-12">
+                            <div class="product-score-share-box d-flex flex-column ">
+                                <div class="product-score-box border-product"></div>
+                                <div class="product-share border-product d-flex align-items-center justify-content-between px-2 py-1">
+                                    <button class="btn-product-share">
+                                        <img src="./src/svg/product/alarm.svg" alt="">
+                                    </button>
+                                    <button class="btn-product-share">
+                                        <img src="./src/svg/product/git.svg" alt="">
+                                    </button>
+                                    <button class="btn-product-share">
+                                        <img src="./src/svg/product/share.svg" alt="">
+                                    </button>
+                                    <button class="btn-product-share">
+                                        <img src="./src/svg/product/save.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-12">
+                            <div class="price-box border-product py-3">
+                                <div class="card-price card-price-cross-red">16,800,000 <span> تومان </span></div>
+                                <div class="card-price">16,800,000 <span> تومان </span></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-12">
+                            <div class="cart-product-body d-flex align-items-center justify-content-center flex-column">
+                                <div class="cart-product-content d-flex align-items-center justify-content-between ">
+                                
+                                    <div class="cart-product-items d-flex align-items-center flex-grow-1 justify-content-center w-100">
+                                        <button class="btn-cart-product">  <i class="fa fa-plus" aria-hidden="true"></i></button>
+                                        <span class="number-cart-product">1</span>
+                                        <button class="btn-cart-product">  <i class="fa fa-minus" aria-hidden="true"></i></button>
+                                    </div>
+                                    <div class="mx-2 ">
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="add-cart-btn-box">
+                                    <button class="add-cart-btn">افزودن به سبد خرید</button>
+                                </div>
+                            </div>
+                        </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="src/js/jquery-3.3.1.min.js"></script>
+    <script src="src/js/popper.js"></script>
+    <script src="src/js/bootstrap.js"></script>
+    <script src="src/js/custom.js"></script>
+    <script>
+        $(".li_list").hover(function () {
+            var hover = $(this).find("img").attr("hover");
+            $(this).find("img").attr("src",  hover);
+        }, function () {
+            var hover = $(this).find("img").attr("on-hover");
+            $(this).find("img").attr("src",  hover);
+        })
+
+
+        $(".box_itme").hover(function () {
+            var hover = $(this).find("img").attr("hover");
+            $(this).find("img").attr("src",  hover);
+        }, function () {
+            var hover = $(this).find("img").attr("on-hover");
+            $(this).find("img").attr("src",  hover);
+        })
+        $(".card_box").hover(function () {
+            
+            $(this).find("img.svg_box").each(function(_, item) {
+                var hover = $(item).attr("hover");
+                $(item).attr("src",  hover);
+                
+            })
+        }, function () {
+            $(this).find("img.svg_box").each(function(_, item) {
+                var hover = $(item).attr("on-hover");
+                $(item).attr("src",  hover);
+                
+            })
+        })
+
+
+
+
+        $(".btn_toggler_meno").click(function () {
+            if ($(this).find("ul").hasClass("d-none")) {
+                $(".btn_toggler_meno").each(function () {
+                    $(this).find("ul").addClass("d-none");
+                });
+                $(this).find("ul").removeClass("d-none");
+            } else {
+                $(this).find("ul").addClass("d-none");
+            }
+
+        });
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+
+                900: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                1000: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                },
+                1200: {
+                    slidesPerView: 4,
+                    spaceBetween: 20,
+                },
+            },
+        });
+        var swiper = new Swiper(".mySwiper2", {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+
+                900: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                1000: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                1200: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+            },
+        });
+
+
+
+
+
+
+
+
+        $('.btn-toggle').click(function () {
+            var classd = $(this).find('span').attr('class');
+            classd = classd.split(' ');
+            if (classd[1] == 'fa-bars') {
+                $(this).find('span').removeClass('fa-bars text-dark fa-2x').addClass('fa-times text-dark fa-2x')
+            }
+            $('.sm-device-menu').addClass('test');
+            $('.heder-shab').addClass('heder-shab-show');
+        })
+        $(".heder-shab").click(function () {
+            $(".btn-toggle").find('span').removeClass('fa-times text-dark fa-2x').addClass('fa-bars text-dark fa-2x')
+            $('.sm-device-menu').removeClass('test');
+            $('.heder-shab').removeClass('heder-shab-show');
+        })
+
+
+
+        $(".btn_itme_meno").click(function () {
+            $(".itme_meno").each(function () {
+                $(this).addClass("d-none");
+            });
+            var on_meno = $(this).attr("on_meno");
+            $("#" + on_meno).removeClass("d-none");
+        })
+
+
+        $(".hover").hover(function (e) {
+            var hover = $(e.target).attr("hover");
+            $(e.target).attr("src", hover);
+        }, function (e) {
+            var img = $(e.target).attr("img");
+            $(e.target).attr("src", img);
+        })
+        $(".btn_heder").hover(function () {
+            var hover = $(this).find("img").attr("hover");
+            $(this).find("img").attr("src", hover);
+        }, function () {
+            var img = $(this).find("img").attr("img");
+            $(this).find("img").attr("src", img);
+        })
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,374 @@
+:root{
+    --gray900:#9d9e9e;
+    --green:#008F22;
+    --red:#e31e24;
+    --purple:#393185;
+    --white:#fff;
+    --block:#2B2A29;
+    --gray:#e9e9ed;
+    --gray800:#757575;
+    --yelllow:#ffed00;
+}
+body{
+    background-color: var(--gray900);
+}
+/* CSS rules are kept repetitive so that you can get CSS rules for each button easily :) */
+
+*
+{
+    user-select: none;
+    -webkit-tap-highlight-color:transparent;
+}
+
+*:focus
+{
+    outline: none;
+}
+
+
+.toggle-button-cover
+{
+    display: table-cell;
+    position: relative;
+    width: 200px;
+    height: 140px;
+    box-sizing: border-box;
+}
+
+.button-cover
+{
+    height: 100px;
+    margin: 20px;
+    background-color: #fff;
+    box-shadow: 0 10px 20px -8px #c5d6d6;
+    border-radius: 4px;
+}
+
+.button-cover:before
+{
+    counter-increment: button-counter;
+    content: counter(button-counter);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: #d7e3e3;
+    font-size: 12px;
+    line-height: 1;
+    padding: 5px;
+}
+
+.button-cover, .knobs, .layer
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.button {
+	position: relative;
+	top: 50%;
+	width: 74px;
+	height: 30px;
+	margin: -40px auto 0 auto;
+	overflow: hidden;
+}
+
+.button.r, .button.r .layer
+{
+    border-radius: 100px;
+}
+
+.button.b2
+{
+    border-radius: 2px;
+}
+
+.checkbox
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.knobs
+{
+    z-index: 2;
+}
+
+.layer
+{
+    width: 100%;
+    background-color: var(--gray800);
+ 
+    transition: 0.3s ease all;
+    z-index: 1;
+}
+
+
+/* Button 9 */
+#button-9 .knobs:before, #button-9 .knobs:after, #button-9 .knobs span
+{
+    position: absolute;
+    top: 6px;
+    width: 20px;
+    height: 10px;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1;
+    padding: 9px 4px;
+    border-radius: 50%;
+    transition: 0.4s cubic-bezier(0.18, 0.89, 0.35, 1.15) all;
+}
+
+#button-9 .knobs:before
+{
+    content: ' ';
+    left: 4px;
+}
+
+#button-9 .knobs:after
+{
+    content: ' ';
+    right: -24px;
+}
+
+#button-9 .knobs:before, #button-9 .knobs:after
+{
+    color: #fff;
+    z-index: 2;
+}
+
+#button-9 .knobs span
+{
+    left: 4px;
+    background-color: var(--yelllow);
+    z-index: 1;
+}
+
+#button-9 .checkbox:checked + .knobs:before
+{
+    left: -24px;
+}
+
+#button-9 .checkbox:checked + .knobs:after
+{
+    right: 4px;
+}
+
+#button-9 .checkbox:checked + .knobs span
+{
+    left: 42px;
+    background-color: var(--gray800);
+}
+
+#button-9 .checkbox:checked ~ .layer
+{
+    background-color: var(--gray);
+    border: 1px solid var(--block);
+}
+
+
+
+
+
+
+
+
+
+#ytd-url {
+  display: block;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  padding: 10px 14px;
+  margin: 20px;
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+  background-color: #143240;
+  border-radius: 4px;
+  box-shadow: 0 10px 20px -5px rgba(20, 50, 64, 0.76);
+}
+/* sort-product style */
+.bg-gray{
+    background-color: var(--gray900);
+}
+.box-content .btns-filter .btn-filter{
+    background-color: transparent;
+    font-size: 14px;
+    border-radius: 10px;
+    margin-inline: 15px;
+    min-width: 130px;
+    padding-block: 5px;
+    cursor: pointer;
+}
+.btns-filter .btn-red{
+    border: 1px solid var(--red);
+    color: var(--red);
+}
+.btns-filter .btn-purple{
+    border: 1px solid var(--purple);
+    color: var(--purple);
+}
+.btns-filter .btn-green{
+    border: 1px solid var(--green);
+    color: var(--green);
+}
+.filter-hover:hover{
+    background-color: var(--white);
+}
+.title-filter{
+    font-size: 13px;
+    color:var(--block);
+}
+.select-filter-card .btns-select-filter{
+    border-radius: 10px;
+    border: 1px solid var(--gray800);
+    background-color: var(--gray);
+    font-size: 14px;
+    margin-inline: 5px;
+}
+.btn-select-red{
+    color: var(--red);
+}
+.btn-select-blue{
+    color: var(--purple);
+}
+.btn-select-green{
+    color: var(--green);
+}
+.pagenation-box .page-link {
+	position: relative;
+	display: block;
+	padding: .5rem .75rem;
+	margin-left: -1px;
+	line-height: 1.25;
+	color: var(--yelllow);
+	background-color: transparent;
+	border: 1px solid var(--yelllow);
+    border-radius: 50%;
+    margin-inline: 5px;
+}
+.pagenation-box .page-link:hover {
+	color: var(--block);
+	text-decoration: none;
+	background-color: var(--yelllow);
+	border-color:var(--block);
+}
+.pagenation-box .page-item:first-child .page-link {
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
+}
+.pagenation-box .page-item:last-child .page-link {
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+.special-offers-sort .img-4571 {
+	position: absolute;
+	left: 130px;
+	top: -193px;
+}
+.special-offers-sort{
+    margin-top:170px;
+    margin-bottom: 380px;
+}
+
+.special-offers-sort .img-507 {
+	position: absolute;
+	bottom: -370px;
+	right: 115px;
+}
+.best-seller-sort{
+    margin-bottom: 245px;
+    
+    
+}
+.best-seller-sort .img-505 {
+	position: absolute;
+	bottom: -235px;
+	left: 115px;
+}
+.popular-products-sort{
+    margin-top: 100px;
+}
+/* End  sort-product style */
+/* product style */
+.product-name-box .product-name{
+    color: var(--purple);
+    font-size: 14px;
+}
+.product-info-body .border-product{
+    border: 1px solid var(--gray800);
+    border-radius: 15px;
+}
+.product-info-body .price-box {
+    padding-inline: 30px;
+}
+.card-price-cross-red {
+	position: relative;
+	color: var(--gray800);
+}
+.card-price {
+	text-align: right;
+	padding: 0px 16px;
+	font-weight: bold;
+}
+.card-price-cross-red::before {
+	content: '';
+	width: 100%;
+	position: absolute;
+	right: 0;
+	top: 50%;
+}
+.card-price-cross-red::before {
+	border-bottom: 2px solid var(--red);
+	-webkit-transform: skewY(-1deg);
+	transform: skewY(-1deg);
+}
+.product-score-share-box .product-share .btn-product-share{
+    background-color: transparent;
+    border: none;
+}
+.cart-product-body .cart-product-content .cart-product-items{
+    border: 1px solid var(--block);
+    border-radius: 15px;
+    padding-inline: 10px;
+    padding-block: 2px;
+
+}
+.cart-product-body .cart-product-content .cart-product-items .number-cart-product{
+    margin-inline: 15px;
+    font-size: 16px;
+    color: var(--gray800);
+}
+.cart-product-body .cart-product-content .cart-product-items .btn-cart-product{
+    color: var(--block);
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.cart-product-body .cart-product-content .cart-product-items .btn-cart-product i{
+    font-size: 20px;
+}
+.cart-product-body .cart-product-content{
+    color: var(--gray800);
+}
+.add-cart-btn-box .add-cart-btn{
+    background-color: var(--red);
+    color: var(--white);
+    border: none;
+    border-radius: 15px;
+    margin-top: 10px;
+    font-size: 14px;
+    padding-inline: 10px;
+}
+/* End product style */
